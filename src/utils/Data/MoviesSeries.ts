@@ -1,7 +1,10 @@
 import { NetlixGeneros, NetflixItem } from './../interfaces.d';
 
 
-/* PELICULAS DATA */
+/* PELICULAS DATA 
+VITE_API_KEY=9c4061556emsh1aff6d6267de9ebp13b4fejsn7765f59b1fa5
+VITE_BASE_URL=https://unogs-unogs-v1.p.rapidapi.com/
+*/
 
 export const DataPeliculas: NetflixItem[] = [
     {
