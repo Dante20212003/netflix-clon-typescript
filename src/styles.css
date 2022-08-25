@@ -1,0 +1,333 @@
+.netlix-logo {
+    width: 9rem;
+}
+
+@media (min-width: 550px) {
+    .netlix-logo {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 950px) {
+    .netlix-logo {
+        width: 15rem;
+    }
+}
+
+/* HELPERS */
+
+.text-center {
+    text-align: center;
+}
+
+.margin-r-5 {
+    margin-right: 5rem;
+}
+
+@media (min-width: 950px) {
+    .margin-r-t-5 {
+        margin-right: 5rem;
+    }
+}
+
+.margin-t-5 {
+    margin-top: 5rem;
+}
+
+.margin-t-3 {
+    margin-top: 3rem;
+}
+
+.margin-b-5 {
+    margin-bottom: 5rem;
+}
+
+.margin-b-8 {
+    margin-bottom: 8rem;
+}
+
+.margin-b-12 {
+    margin-bottom: 12rem;
+}
+
+.padding-5 {
+    padding: 5rem 0;
+}
+
+.padding-4 {
+    padding: 4rem 0;
+}
+
+/* HELPERS */
+
+.info {
+    padding: 6rem 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 950px) {
+    .info {
+        padding: 10rem;
+    }
+}
+
+.info-title {
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+@media (min-width: 550px) {
+    .info-title {
+        font-size: 5rem;
+    }
+}
+
+.info-description,
+.info-description-two {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 550px) {
+    .info-description {
+        font-size: 2.6rem;
+    }
+
+    .info-description-two {
+
+        font-size: 2rem;
+    }
+}
+
+.info-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 550px) {
+    .info-action {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.info-input {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 550px) {
+    .info-input {
+        width: 50%;
+        font-size: 2rem;
+    }
+}
+
+.btn-info {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1rem 1.6rem;
+    background-color: #e50914;
+    color: #fFF;
+    border: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 550px) {
+    .btn-info {
+        margin: 0;
+        font-size: 2rem;
+        padding: 0 2.6rem;
+    }
+}
+
+
+/* CARD */
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 950px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aling-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.card-title {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 950px) {
+    .card-title {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 550px) {
+    .card-title {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.card-info {
+    font-size: 1.8rem;
+}
+
+
+@media (min-width: 950px) {
+    .card-info {
+        font-size: 2.6rem;
+        text-align: left;
+    }
+}
+
+.card-thumb {
+    position: relative;
+}
+
+
+@media (min-width: 950px) {
+    .card-thumb {
+        position: relative;
+        margin-left: 5rem;
+    }
+
+}
+
+.card-video {
+    margin: 0 auto;
+    width: 25rem;
+    max-width: 35rem;
+}
+
+.card-video-two {
+    margin: 0 auto;
+    width: 22rem;
+    max-width: 35rem;
+}
+
+
+@media (min-width: 950px) {}
+
+
+.card-video-play {
+    margin: 0 auto;
+
+}
+
+.card-image {
+    position: absolute;
+    margin: 0 auto;
+    width: 35rem;
+    max-width: 35rem;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 950px) {
+    .card-image {
+        left: -50px;
+    }
+}
+
+.card-image-two {
+    position: absolute;
+    margin: 0 auto;
+    width: 35rem;
+    max-width: 42rem;
+    top: -35px;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 950px) {
+    .card-image-two {
+        left: -63px;
+    }
+}
+
+
+.card-image-no-abs {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.card-img-animation {
+
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 1rem;
+
+
+}
+
+.image-animation {
+    width: 3rem;
+}
+
+.card-title-animation {
+    font-size: 1.4rem;
+}
+
+.card-title-animation-download {
+    font-size: 1.2rem;
+    color: #0071EB;
+}
+
+.cart-text-animation {
+    flex: 1;
+}
+
+.animation {
+    width: 5rem;
+}
+
+
+/* FAQ */
+.faq-title {
+    font-size: 5rem;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.faq-info {
+    padding: 3rem 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 950px) {
+    .faq-info {
+        padding: 6rem 0;
+    }
+}

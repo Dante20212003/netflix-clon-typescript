@@ -1,0 +1,295 @@
+.sidebar-fixed {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+    display: block !important;
+    /* PARA TENER UN ACHO */
+    /*  max-width: 44rem; */
+}
+
+
+
+@media (min-width: 550px) {
+    .sidebar-fixed {
+        background: rgb(0, 0, 0, .7);
+    }
+}
+
+.sidebar-mx-w {
+    background: rgb(49, 49, 49);
+    max-width: 25rem
+}
+
+body .sidebar-fixed {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+body .sidebar-mx-w {
+    padding: 0;
+}
+
+body .padding-filters {
+    padding: 0;
+}
+
+@media (min-width: 550px) {
+    body .sidebar-fixed {
+        padding-top: 8rem;
+    }
+
+    body .sidebar-mx-w {
+        padding: 0;
+    }
+
+}
+
+/*  */
+
+.sideBarFilters-header {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .sideBarFilters-header {
+        display: block;
+    }
+
+    .sideBarFilters-back-button {
+        display: none;
+        display: inline;
+    }
+}
+
+/*  */
+.sidebar-container {
+    overflow-y: initial !important;
+    height: 100%;
+}
+
+.sidebar-body {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+/* .xyz {
+    background-color: transparent;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+} */
+
+.img-perfil {
+    width: 3rem;
+    border-radius: .5rem;
+}
+
+.input-drawer {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    left: 0;
+}
+
+.top-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 1rem;
+    align-items: center;
+}
+
+.top-drawer-input-md {
+    display: none;
+}
+
+.top-drawer-input-md input {
+    border: 2px solid #525151;
+    padding: 1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    outline: none;
+}
+
+.top-drawer-input-md input:focus {
+    border: 2px solid #333333;
+}
+
+@media (min-width: 550px) {
+    .top-drawer-input-md {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.input-drawer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #333333;
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.input-drawer input {
+    all: unset;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 550px) {
+    .input-drawer {
+        display: none;
+    }
+}
+
+.main-search {
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+    padding-left: 1rem;
+    max-width: 70rem;
+}
+
+.main-search h2 {
+    font-size: 1.6rem;
+}
+
+
+@media (min-width: 550px) {
+    .main-search-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 950px) {
+    .main-search-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+}
+
+/* IMAGEN COMPONET */
+
+.item-search-container {
+    display: flex;
+    align-items: center;
+    margin-top: .3rem;
+    background-color: #232323;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+
+@media (min-width: 550px) {
+    .item-search-container {
+        background-color: unset;
+    }
+
+    .d-none {
+        display: none;
+    }
+}
+
+.item-search-container:first-child {
+    margin-top: 2rem;
+}
+
+.item-search-img {
+    width: 16rem;
+    height: 8rem;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+}
+
+@media (min-width: 550px) {
+    .item-search-img {
+        width: 18rem;
+        height: 25rem;
+        border-radius: .6rem;
+
+    }
+}
+
+.item-search-title {
+    flex: 1;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.item-search-icon {
+    margin: 0 1rem;
+}
+
+.skeleton-loader {
+    margin: 1rem auto 0 auto;
+
+    width: 99%;
+    height: 6rem;
+    display: block;
+    background-color: rgba(49, 47, 47, 0.5);
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 1rem;
+}
+
+@media (min-width: 550px) {
+    .skeleton-loader {
+        margin: 0;
+        width: 85%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 950px) {
+    .skeleton-loader {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-color: rgba(49, 47, 47, 0)
+    }
+
+    25% {
+        background-color: rgba(49, 47, 47, .3)
+    }
+
+    50% {
+        background-color: rgba(49, 47, 47, .5)
+    }
+
+    75% {
+        background-color: rgba(49, 47, 47, .3)
+    }
+
+    100% {
+        background-color: rgba(49, 47, 47, 0)
+    }
+}

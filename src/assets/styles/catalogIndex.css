@@ -1,0 +1,304 @@
+.container-catalog {
+    padding: 2rem;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+}
+
+
+.navegacion nav {
+    display: none;
+
+}
+
+@media (min-width: 550px) {
+    .navegacion nav {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+.navegacion p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fff;
+    transition-property: color;
+    transition-duration: .5s;
+}
+
+.navegacion p:hover {
+    cursor: pointer;
+    color: #b3b3b3;
+}
+
+
+.top-bar-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-img {
+    width: 2rem;
+}
+
+@media (min-width: 550px) {
+    .top-bar-img {
+        margin-right: 3rem;
+    }
+}
+
+.search-perfil {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-perfil {
+    width: 3rem;
+    border-radius: .5rem;
+}
+
+.menu-filter {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .menu-filter {
+        display: block;
+    }
+}
+
+
+
+.info-background {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -15rem;
+}
+
+@media (min-width: 550px) {
+    .info-background {
+        margin-top: -10rem;
+        justify-content: unset;
+        padding: 17rem 5rem;
+    }
+}
+
+.info-list {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.info-background p {
+    font-size: 1.1rem;
+    color: #FFF;
+}
+
+@media (min-width: 550px) {
+    .info-list p {
+        display: none;
+    }
+}
+
+.info-background-pelicula {
+    width: 13rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+    .info-background-pelicula {
+        width: 13rem;
+        padding: 2rem 0;
+        margin: unset;
+    }
+}
+
+.info-icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+}
+
+.info-icon-text span {
+    font-size: 1rem;
+}
+
+@media (min-width: 550px) {
+    .info-icon-text span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 550px) {
+    .convert-btn-info {
+        flex-direction: row;
+        background-color: #6d6d6eb3;
+        padding: .9rem 1.5rem;
+        border: none;
+        border-radius: .5rem;
+    }
+
+    .convert-btn-info span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+}
+
+.info-button-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FFF;
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    color: #000;
+}
+
+.info-button-text span {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 550px) {
+    .info-button-text span {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: .32rem 1rem;
+    }
+}
+
+@media (min-width: 550px) {
+    .hidden-btn-list {
+        display: none;
+    }
+}
+
+
+
+.info-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 550px) {
+    .info-buttons {
+        gap: 2rem;
+        justify-content: unset;
+    }
+
+}
+
+.circle-info {
+    margin-top: .3rem;
+}
+
+@media (min-width: 550px) {
+    .circle-info {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .detail-pelicula {
+        display: block;
+        width: 35rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+/*  */
+
+.top-bar-filter {
+    display: flex;
+    padding: 2rem 0;
+    font-weight: bold;
+    justify-content: space-around;
+
+}
+
+@media (min-width: 550px) {
+    .top-bar-filter {
+        display: none;
+    }
+}
+
+.top-bar-fixed {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .7);
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+
+
+.top-bar-filter p {
+    font-size: 1.5rem;
+}
+
+
+
+/*  */
+
+.container-peliculas-all h2 {
+    font-size: 2.3rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.peliculas-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.img-peli {
+    width: 10rem;
+    border-radius: .5rem;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.img-peli:hover,
+.img-peli-v2:hover {
+
+    transform: scale(1.1);
+}
+
+.img-peli-v2 {
+    width: 16rem;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: .5rem;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+
+.fix-info {
+    margin-top: -9rem;
+}
+
+.image-test {
+    width: 10rem;
+}

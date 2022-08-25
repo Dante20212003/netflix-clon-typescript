@@ -1,0 +1,24 @@
+.collapsible-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    padding: 2rem;
+
+}
+
+.collapsible-text {
+    font-size: 2rem;
+}
+
+.m-t-1_5 {
+    margin-top: 1.5px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-b-1_5 {
+    margin-bottom: 1.5px;
+}

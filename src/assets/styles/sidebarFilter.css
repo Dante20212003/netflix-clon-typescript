@@ -1,0 +1,71 @@
+.sideBarFilters-container {
+    padding: 2rem;
+}
+
+.header-sideBarMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.header-sideBarMenu p {
+    font-size: 2rem;
+
+}
+
+.filter-item {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 3;
+    color: #ababab;
+}
+
+.filter-item:hover {
+    color: #fff;
+}
+
+.active {
+    color: #fff;
+    font-weight: 900;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 550px) {
+    .active {
+        display: none;
+    }
+}
+
+@media (min-width: 550px) {
+
+
+    .filter-item {
+        padding: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-align: left;
+        color: #9c9c9c;
+        -webkit-user-select: none;
+    }
+
+    .filter-item:hover {
+        color: #fff;
+        background-color: #6d6d6d;
+        border-left: .5rem solid #e50914;
+    }
+}
+
+
+.main-series {
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+    padding-left: 1rem;
+    max-width: 70rem;
+}
+
+.main-series h2 {
+    font-size: 1.6rem;
+}
